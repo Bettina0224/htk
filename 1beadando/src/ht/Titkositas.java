@@ -26,6 +26,17 @@ public class Titkositas
 		char[] kodolando = this.bemenet.toCharArray();
 		for (int k=0;k < kodolando.length; k++) 
 		{
+			/**if(kodolando[k] != '\n' || kodolando[k] != '\r') kodolando[k]++;*/
+			
+			if(kodolando[k] == 'z')
+			{
+			kodolando[k]= '`';
+			}
+			if(kodolando[k] == 'Z')
+			{
+			kodolando[k]= '@';
+			}
+			
 			if(kodolando[k] != ' ')kodolando[k]++;
 		}
 		this.kodolt = kodolando;
