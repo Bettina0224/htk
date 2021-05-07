@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  beadando4:
+    image: beadando4
+    build:
+      context: .
+      dockerfile: ./Dockerfile

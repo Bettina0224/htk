@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+#  beadando4:
+#   image: beadando4
+#    build:
+#      context: .
+#      dockerfile: ./Dockerfile
+  
+    mysql:
+      image: mysql:latest
+      restart: always
+      ports: 
+        - 1433:1433
+      environment: 
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_USER: k
+        MYSQL_PASSWORD: root
+        MYSQL_DATABASE: adatbazis
+
+      
